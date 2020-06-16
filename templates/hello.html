@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage</title>
+        <style>
+            @media print{
+                .screen-only{
+                    display: none;
+                }
+
+            }
+            button{
+                width: 200px;
+                height: 50px;
+                background-color: blue;
+            }
+            button:hover{
+                background-color: green;
+                height: 100px;
+            }
+            ol li{
+                color:blueviolet
+            }
+            ul> li{
+                color: brown;
+            }
+
+            li{
+                color: aqua;
+            }
+            input[type=text]{
+                background-color:gray;
+            }
+            input[type=password]{
+                background-color: yellowgreen;
+                
+            }
+            p::selection{
+                background-color: aqua;
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        Hello this is my Webpage. 
+        Edited something here!
+        Added something new on b1
+
+        <div>
+            <input name="name" type="text" placeholder="John">
+            <input name="password" type="password"> 
+        </div>
+
+        <div>
+            Favourite Color:<br>
+            <input name="color" type="radio" value="red">ReD
+            <input name="color" type="radio" value="blue">blue
+            <input name="color" type="radio" value="green">green
+        </div>
+
+        <div id="div1">
+            <input name="country" list="countries" placeholder="Country">
+            <datalist id="countries">
+                <option value="Nigeria">
+                <option value="Ghana">
+            </datalist>
+        </div>
+
+        <div>
+            <ul>
+                <li>Item one</li>
+                <li>Item two</li>
+                <ol>
+                    <li>item two has one lol</li>
+                </ol>
+                not in li tag
+                <li>Item three</li>
+            </ul>
+            <ol>
+                <li>Ichi</li>
+                <li>Nii</li>
+                <li>San</li>
+            </ol>
+        </div>
+        <div>
+            <button>Click me!</button>
+        </div>
+
+        <p class="screen-only">This is just some random ass text man! wont show when printing</p>
+        
+
+
+    </body>
+</html>
