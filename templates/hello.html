@@ -29,7 +29,7 @@
                 color: aqua;
             }
             input[type=text]{
-                background-color:gray;
+                background-color:rgb(128, 128, 128);
             }
             input[type=password]{
                 background-color: yellowgreen;
@@ -59,11 +59,16 @@
         </div>
 
         <div id="div1">
-            <input name="country" list="countries" placeholder="Country">
-            <datalist id="countries">
+            <form action="/hello" method="POST">
+                <input type="text" name="name" placeholder="John Doe">
+                <input name="country" list="countries" placeholder="Country">
+                <datalist id="countries">
                 <option value="Nigeria">
                 <option value="Ghana">
-            </datalist>
+                </datalist>
+
+                <button>Submit!</button>
+        </form>
         </div>
 
         <div>
@@ -81,9 +86,6 @@
                 <li>Nii</li>
                 <li>San</li>
             </ol>
-        </div>
-        <div>
-            <button>Click me!</button>
         </div>
 
         <p class="screen-only">This is just some random ass text man! wont show when printing</p>

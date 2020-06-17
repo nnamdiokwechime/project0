@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -6,7 +6,8 @@ app = Flask(__name__)
 def index():
     return render_template("hello.html")
 
-@app.route("/<string:name>")
-def hello(name):
-    name= name.capitalize()
-    return f"Hello, {name}"
+@app.route("/hello", methods= ["POST"])
+def hello():
+    name= request.form.get("name").capitalize()
+    country = request.form.get("country") 
+    return f"Hello, {name} from {country}"
